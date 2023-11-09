@@ -14,11 +14,9 @@ public class CalcolaBiglietto {
 //		Chiedo all'utente i km e l'età e li salvo in delle variabili
 		System.out.print("Quanti km vuoi percorrere? ");
 		int kms = in.nextInt();
-		System.out.println(kms);
 		
 		System.out.print("Quanti anni hai? ");
 		int age = in.nextInt();
-		System.out.println(age);
 		
 		
 		// Calcolo il prezzo del biglietto al km e lo salvo in due variabili diverse per gestire lo sconto
@@ -33,7 +31,10 @@ public class CalcolaBiglietto {
         }
 		
 		
-        System.out.println("Il costo del biglietto è: " + finalPrice + "€");
+//        Dopo aver notato che in alcuni casi il risultato è un numero con una serie di decimali molto lunghi, ho fixato con un printf. Ho trovato su internet anche un
+//        DecimalFormat con il formattatore, però in questo caso l'ho ritenuto eccessivo.
+        
+        System.out.printf("Il costo del biglietto è: %.2f€ \n", finalPrice);
 		
 	}
 
