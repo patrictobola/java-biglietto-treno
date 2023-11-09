@@ -1,10 +1,21 @@
 package org.lessons.java;
 
+import java.util.Scanner;
+
 public class CalcolaBiglietto {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+//		Importo lo scanner
+		Scanner in = new Scanner(System.in);
+		
+//		Chiedo all'utente i km e l'età e li salvo in delle variabili
+		System.out.print("Quanti km vuoi percorrere? ");
+		int kms = in.nextInt();
+		System.out.println(kms);
+		
+		System.out.print("Quanti anni hai? ");
+		int age = in.nextInt();
+		System.out.println(age);
 	}
 
 }
