@@ -21,6 +21,19 @@ public class CalcolaBiglietto {
 		System.out.println(age);
 		
 		
+		// Calcolo il prezzo del biglietto al km e lo salvo in due variabili diverse per gestire lo sconto
+        double partialPrice = kms * 0.21;      
+        double finalPrice = partialPrice;
+
+        // Se ci sono, applico uno sconto
+        if (age < 18) {
+        	finalPrice -= partialPrice * 0.20;
+        } else if (age >= 65) {
+        	finalPrice -= partialPrice * 0.40;
+        }
+		
+		
+        System.out.println("Il costo del biglietto è: " + finalPrice + "€");
 		
 	}
 
