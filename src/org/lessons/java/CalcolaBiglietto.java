@@ -8,6 +8,9 @@ public class CalcolaBiglietto {
 //		Importo lo scanner
 		Scanner in = new Scanner(System.in);
 		
+//		Salvo il prezzo del biglietto al km
+		double price = 0.21;
+		
 //		Chiedo all'utente i km e l'età e li salvo in delle variabili
 		System.out.print("Quanti km vuoi percorrere? ");
 		int kms = in.nextInt();
@@ -16,6 +19,9 @@ public class CalcolaBiglietto {
 		System.out.print("Quanti anni hai? ");
 		int age = in.nextInt();
 		System.out.println(age);
+		
+		
+		
 	}
 
 }
